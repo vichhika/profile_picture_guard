@@ -1,6 +1,7 @@
 
 import requests
 import json
+import sys
 from os import system
 
 def get_userid(token):
@@ -29,6 +30,8 @@ print("2. Disable protection")
 input = input("Choose :")
 if input == "1": 
     ENABLE = "true"
-else if input == "2": 
+elif input == "2": 
     ENABLE = "false"
+else :
+    sys.exit()
 protection(ACCESS_TOKEN,ENABLE)

@@ -1,6 +1,4 @@
-#Author by Vichhika
-#Date 11/Jan/2017
-#turn 2-FA off
+
 import requests
 import json
 from os import system
@@ -31,6 +29,6 @@ print("2. Disable protection")
 input = input("Choose :")
 if input == "1": 
     ENABLE = "true"
-else: 
+else if input == "2": 
     ENABLE = "false"
 protection(ACCESS_TOKEN,ENABLE)
